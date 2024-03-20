@@ -14,14 +14,14 @@ Terraform will perform the following actions:
       + apply_immediately                     = false
       + arn                                   = (known after apply)
       + auto_minor_version_upgrade            = false
-      + availability_zone                     = "us-east-1a"
+      + availability_zone                     = "us-east-2a"
       + backup_retention_period               = 7
       + backup_target                         = (known after apply)
       + backup_window                         = (known after apply)
       + ca_cert_identifier                    = (known after apply)
       + character_set_name                    = (known after apply)
       + copy_tags_to_snapshot                 = false
-      + db_name                               = "arc-demo-db"
+      + db_name                               = "arc_demo_db_1a"
       + db_subnet_group_name                  = "demo-sb-grp"
       + delete_automated_backups              = true
       + deletion_protection                   = false
@@ -53,7 +53,7 @@ Terraform will perform the following actions:
       + multi_az                              = false
       + nchar_character_set_name              = (known after apply)
       + network_type                          = (known after apply)
-      + option_group_name                     = "demo-op-grp"
+      + option_group_name                     = (known after apply)
       + parameter_group_name                  = "demo-pg"
       + performance_insights_enabled          = false
       + performance_insights_kms_key_id       = (known after apply)
@@ -71,7 +71,7 @@ Terraform will perform the following actions:
       + storage_type                          = (known after apply)
       + tags_all                              = (known after apply)
       + timezone                              = (known after apply)
-      + username                              = "demo-arc"
+      + username                              = "demo_arc"
       + vpc_security_group_ids                = (known after apply)
     }
 
@@ -79,7 +79,7 @@ Terraform will perform the following actions:
   + resource "aws_db_parameter_group" "example" {
       + arn         = (known after apply)
       + description = "Managed by Terraform"
-      + family      = "postgres13"
+      + family      = "postgres16"
       + id          = (known after apply)
       + name        = "demo-pg"
       + name_prefix = (known after apply)
@@ -195,7 +195,7 @@ Terraform will perform the following actions:
       + instance_initiated_shutdown_behavior = (known after apply)
       + instance_lifecycle                   = (known after apply)
       + instance_state                       = (known after apply)
-      + instance_type                        = "t2.micro"
+      + instance_type                        = "t2.small"
       + ipv6_address_count                   = (known after apply)
       + ipv6_addresses                       = (known after apply)
       + key_name                             = "demo-key"
@@ -576,6 +576,17 @@ Terraform will perform the following actions:
     }
 
 Plan: 25 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + ami_id              = (known after apply)
+  + private_subnets     = [
+      + (known after apply),
+      + (known after apply),
+    ]
+  + public_subnets_cidr = [
+      + (known after apply),
+      + (known after apply),
+    ]
 
 ─────────────────────────────────────────────────────────────────────────────
 
