@@ -15,6 +15,7 @@ resource "aws_db_parameter_group" "example" {
   }
 }
 
+
 resource "aws_kms_key" "example" {
   deletion_window_in_days = 10
 }
@@ -37,7 +38,6 @@ resource "aws_db_instance" "this" {
   db_subnet_group_name            = var.db_subnet_group_name
   backup_retention_period         = var.backup_retention_period
   parameter_group_name            = var.parameter_group_name
-  option_group_name               = var.option_group_name
   availability_zone               = var.availability_zone
   multi_az                        = var.multi_az
   publicly_accessible             = var.publicly_accessible

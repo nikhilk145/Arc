@@ -31,7 +31,7 @@ No resources.
 | <a name="input_allow_major_version_upgrade"></a> [allow\_major\_version\_upgrade](#input\_allow\_major\_version\_upgrade) | n/a | `bool` | n/a | yes |
 | <a name="input_apply_immediately"></a> [apply\_immediately](#input\_apply\_immediately) | n/a | `bool` | `null` | no |
 | <a name="input_auto_minor_version_upgrade"></a> [auto\_minor\_version\_upgrade](#input\_auto\_minor\_version\_upgrade) | n/a | `bool` | n/a | yes |
-| <a name="input_availability_zone"></a> [availability\_zone](#input\_availability\_zone) | n/a | `string` | `null` | no |
+| <a name="input_availability_zone"></a> [availability\_zone](#input\_availability\_zone) | variable "option\_group\_name" { type = string } | `string` | `null` | no |
 | <a name="input_availability_zones"></a> [availability\_zones](#input\_availability\_zones) | list of availability zones | `list(string)` | <pre>[<br>  "us-east-2a",<br>  "us-east-2b"<br>]</pre> | no |
 | <a name="input_backup_retention_period"></a> [backup\_retention\_period](#input\_backup\_retention\_period) | n/a | `number` | n/a | yes |
 | <a name="input_backup_window"></a> [backup\_window](#input\_backup\_window) | n/a | `string` | `null` | no |
@@ -51,7 +51,6 @@ No resources.
 | <a name="input_max_allocated_storage"></a> [max\_allocated\_storage](#input\_max\_allocated\_storage) | n/a | `number` | `null` | no |
 | <a name="input_multi_az"></a> [multi\_az](#input\_multi\_az) | n/a | `bool` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of the vpc | `string` | `"arc-demo"` | no |
-| <a name="input_option_group_name"></a> [option\_group\_name](#input\_option\_group\_name) | n/a | `string` | n/a | yes |
 | <a name="input_parameter_group_name"></a> [parameter\_group\_name](#input\_parameter\_group\_name) | n/a | `string` | n/a | yes |
 | <a name="input_private_subnets_cidr"></a> [private\_subnets\_cidr](#input\_private\_subnets\_cidr) | list of private subnet CIDR blocks | `list(string)` | <pre>[<br>  "172.29.31.64/27",<br>  "172.29.31.96/27"<br>]</pre> | no |
 | <a name="input_public_subnets_cidr"></a> [public\_subnets\_cidr](#input\_public\_subnets\_cidr) | list of public subnet CIDR blocks | `list(string)` | <pre>[<br>  "172.29.31.0/27",<br>  "172.29.31.32/27"<br>]</pre> | no |

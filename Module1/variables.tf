@@ -131,9 +131,9 @@ variable "manage_master_user_password" {
 variable "db_subnet_group_name" {
   type = string
 }
-variable "option_group_name" {
-  type = string
-}
+# variable "option_group_name" {
+#   type = string
+# }
 variable "availability_zone" {
   default = null
   type    = string
