@@ -66,5 +66,9 @@ No resources.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_ami_id"></a> [ami\_id](#output\_ami\_id) | n/a |
+| <a name="output_private_subnets"></a> [private\_subnets](#output\_private\_subnets) | n/a |
+| <a name="output_public_subnets_cidr"></a> [public\_subnets\_cidr](#output\_public\_subnets\_cidr) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

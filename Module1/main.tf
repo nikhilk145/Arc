@@ -50,4 +50,5 @@ module "db" {
   max_allocated_storage           = var.max_allocated_storage
   enabled_cloudwatch_logs_exports = var.enabled_cloudwatch_logs_exports
   deletion_protection             = var.deletion_protection
+  depends_on                      = [module.networking]
 }
